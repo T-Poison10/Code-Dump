@@ -1,3 +1,4 @@
 #Ignores All .log files
 *.log
 .vscode/*
+.vscode/settings.json
