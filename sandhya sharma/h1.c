@@ -3,5 +3,5 @@
 int main()
 {
     int a , b , c;
-    printf("Dipan u %d",a);
+    printf("Dipan u %d %d",a,b);
 }
