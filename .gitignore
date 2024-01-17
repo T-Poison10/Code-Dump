@@ -8,3 +8,4 @@
 !.vscode/extensions.json 
 !.vscode/c_cpp_properties.json 
 .history.vscode/settings.json
+*.exe
