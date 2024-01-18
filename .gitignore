@@ -9,3 +9,4 @@
 !.vscode/c_cpp_properties.json 
 .history.vscode/settings.json
 *.exe
+*.bin
