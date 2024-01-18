@@ -1,7 +1,8 @@
 import shutil as sh
 import os
-files = os.listdir("C:\\Users\\dipan\\OneDrive\\Desktop\\DWIT\\C-Programing\\Practise")
-print(files)
+from tkinter import filedialog
+path = filedialog.askdirectory()
+files = os.listdir(path)
 for file in files:
     if file.endswith('.exe'):
-        os.remove(file)
+        os.remove(f"{path}\\{file}")
