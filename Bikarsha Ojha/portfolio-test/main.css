@@ -1,9 +1,17 @@
-* {
-
-    color: black;
+html {
+    cursor: none;
+    background-color: black;
+    color: white;
 }
 
-h1 {
+h2 { 
+    float: left;
+}
 
-    color: black;
+.mouse {
+    width: 12px;
+    height: 5px;
+    background: 20px white;
+    border: 200px white;  
+    border-radius: 50%;
 }
