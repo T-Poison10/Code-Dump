@@ -1,7 +1,8 @@
 html {
     cursor: none;
-    background-color: black;
+    background-color: #000080;
     color: white;
+    font-family: PixelifySans;
 }
 
 h2 { 
@@ -9,9 +10,37 @@ h2 {
 }
 
 .mouse {
-    width: 12px;
-    height: 5px;
+    width: 10px;
+    height: 1px;
     background: 20px white;
     border: 200px white;  
     border-radius: 50%;
 }
+@font-face {
+    font-family: PixelifySans;
+    src: url(PixelifySans-Regular.ttf);
+}
+
+
+.titlebar { 
+    box-shadow: yellow;
+    border: 1px solid white;
+
+
+
+}
+
+#blink {
+    animation-name:blink;
+  width:280px;
+  animation-duration:s;
+  animation-timing-function:ease-in;
+  animation-iteration-count:Infinite;
+}
+
+ @keyframes blink { 
+    0%{color: white};
+    50%{color:#000080};
+    100%{color: white;}
+
+ }
