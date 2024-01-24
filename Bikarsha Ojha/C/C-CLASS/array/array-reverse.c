@@ -1,10 +1,9 @@
 #include<stdio.h>
-int main(){
+
+int main() {
     int i = 0;
     int arr[5];
     int num;
-    int rra;
-
 
     while (i < 5) {
         printf("Enter Number for the array: ");
@@ -12,13 +11,11 @@ int main(){
         arr[i] = num; 
         i++;
     }
-   
-    
 
-
+    printf("Reversed Array: ");
     for (i = 4; i >= 0; i--) {
         printf("%d ", arr[i]);
-    
+    }
 
-
+    return 0;
 }
