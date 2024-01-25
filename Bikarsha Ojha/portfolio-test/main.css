@@ -1,46 +1,176 @@
-html {
-    cursor: none;
-    background-color: #000080;
-    color: white;
-    font-family: PixelifySans;
-}
-
-h2 { 
-    float: left;
-}
-
-.mouse {
-    width: 10px;
-    height: 1px;
-    background: 20px white;
-    border: 200px white;  
-    border-radius: 50%;
-}
 @font-face {
     font-family: PixelifySans;
     src: url(PixelifySans-Regular.ttf);
 }
 
+body {
+    
+    background-color: red; /* Dark teal color */
+    color: white;
+    font-family: PixelifySans;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.titlebar { 
-    box-shadow: yellow;
+h2 {
+    float: left;
+    margin: 0;
+}
+
+.mouse {
+    width: 10px;
+    height: 1px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.title-bar {
+    background-color: #000080;
+    color: white;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+}
+
+.title-bar .title a {
+    display: inline-block;
+    animation: fadeIn 0.5s;
+    text-decoration: none;
+    color: white;
+}
+
+.blink {
+    background-color: white;
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    animation: blink 1s infinite;
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.button {
+    width: 10px;
+    height: 10px;
     border: 1px solid white;
-
-
-
+    background-color: white;
+    cursor:pointer;
 }
 
-#blink {
-    animation-name:blink;
-  width:280px;
-  animation-duration:s;
-  animation-timing-function:ease-in;
-  animation-iteration-count:Infinite;
+.minimize { 
+    background-color: yellow;
 }
 
- @keyframes blink { 
-    0%{color: white};
-    50%{color:#000080};
-    100%{color: white;}
+.maximize {
+    background-color: skyblue;
+}
 
- }
+.close {
+    background-color: red;
+}
+
+button:hover {
+    background-color: white;
+    color: #008080;
+}
+
+@keyframes blink {
+    0% {
+        background-color: white;
+    }
+    50% {
+        background-color: #008080;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+hr { 
+    margin-top: 25px
+}
+
+h2 {
+    padding: 2px;
+    text-align: center;
+    
+}
+
+p { 
+    font-size: larger;
+}
+
+h3 {
+    color: beige; /* Dark teal color for section headings */
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+h3, p {
+    margin-bottom: 15px;
+}
+
+/* Style for contact information */
+h3 + p {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+/* Style for the whole body content */
+body {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color:#008080; /* Darker teal color */
+}
+
+/* Style for the entire content section */
+.content {
+    padding-top: 20px;
+}
+
+a { 
+    color: white;
+}
+a:link { 
+    text-decoration: none; 
+  } 
+  a:visited { 
+    text-decoration: none; 
+  } 
+  a:hover { 
+    text-decoration: none; 
+  } 
+  a:active { 
+    text-decoration: none; 
+  }
+
+  
