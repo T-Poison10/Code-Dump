@@ -12,11 +12,10 @@ int main()
 
     for (i = 0; i < 5; i++)
     {
-        // Repeat until num becomes zero
         while (num[i] != 0)
         {
-            arr[count] = num[i] % 2; // Remainder
-            num[i] = num[i] / 2;     // Quotient
+            arr[count] = num[i] % 2; 
+            num[i] = num[i] / 2;     
             count++;
         }
         printf("\nThe Binary Equivalent is: ");

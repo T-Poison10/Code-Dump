@@ -55,7 +55,7 @@ int main()
 					fflush(stdin);
 					fscanf(passw,"%s",&name);
 					printf("Enter old pass:");
-					scanf("%s",inp);	
+					scanf("%s",inp);
 					len=strlen(name);
 					fclose(passw);
 					for (i=0;i<len;i++)
