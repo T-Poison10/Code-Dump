@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 int main()
 {
 	int temp,n,num[20],i,j,k;
