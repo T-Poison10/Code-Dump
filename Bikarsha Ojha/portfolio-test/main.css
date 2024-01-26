@@ -5,12 +5,11 @@
 
 body {
     
-    background-color: red; /* Dark teal color */
     color: white;
     font-family: PixelifySans;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:content-box ;
 }
 
 h2 {
@@ -18,13 +17,13 @@ h2 {
     margin: 0;
 }
 
-.mouse {
+/* .mouse {
     width: 10px;
     height: 1px;
     background: white;
     border: 2px solid white;
     border-radius: 50%;
-}
+} */
 
 .title-bar {
     background-color: #000080;
@@ -32,6 +31,7 @@ h2 {
     padding: 8px 20px;
     display: flex;
     align-items: center;
+    
     
     justify-content: space-between;
 }
@@ -59,7 +59,7 @@ h2 {
 .button {
     width: 10px;
     height: 10px;
-    border: 1px solid white;
+    
     background-color: white;
     cursor:pointer;
 }
@@ -81,27 +81,6 @@ button:hover {
     color: #008080;
 }
 
-@keyframes blink {
-    0% {
-        background-color: white;
-    }
-    50% {
-        background-color: #008080;
-    }
-    100% {
-        background-color: white;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 hr { 
     margin-top: 25px
 }
@@ -117,8 +96,10 @@ p {
 }
 
 h3 {
-    color: beige; /* Dark teal color for section headings */
-    border-bottom: 2px solid white;
+    color: beige; 
+
+
+    border-bottom: 1px solid white;
     padding-bottom: 5px;
     margin-top: 20px;
 }
@@ -136,23 +117,22 @@ h3, p {
     margin-bottom: 15px;
 }
 
-/* Style for contact information */
+
 h3 + p {
     margin-top: 0;
     font-weight: bold;
 }
-
-/* Style for the whole body content */
 body {
     max-width: 800px;
     margin: auto;
     padding: 20px;
-    border: 2px solid white;
+    border: 0px solid white;
     border-radius: 10px;
-    background-color:#008080; /* Darker teal color */
+    background-image:url(images/WINDOWS098BG.jpg); 
+    
 }
 
-/* Style for the entire content section */
+
 .content {
     padding-top: 20px;
 }
@@ -173,4 +153,18 @@ a:link {
     text-decoration: none; 
   }
 
-  
+.box {
+    background-color: beige;
+        padding: 20px;
+    border-radius: 10px;
+}
+
+.box h2,
+.box hr,
+.box p,
+.box h3,
+.box ul,
+.box li,
+.box a {
+    color: black; 
+}
