@@ -144,3 +144,35 @@ p {
     margin-bottom: 25px;
 }
 
+.education-list{
+    font-family: Josefin-Italic;
+
+    text-align: center;
+    list-style-type: none;
+}
+
+h2 { 
+    font-family: Josefont;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+h3 { 
+    font-family: Josefont;
+    margin-top: 30px;
+    margin-left: 30px;
+ 
+
+}
+
+h4 { 
+    font-family: Josefont;
+    margin-left: 30px;
+
+}
+
+#education-list { 
+    font-size: medium;
+    margin-left: 30px;
+}
