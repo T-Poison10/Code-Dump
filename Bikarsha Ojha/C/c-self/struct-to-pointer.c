@@ -10,6 +10,8 @@ struct baun {
 int main() { // Changed function name to main
     struct baun b1 = {"baun", 29, 19219.222}; // Corrected struct initialization syntax
     struct baun *ptr = &b1;
+
+    
     printf("%s", ptr->name); // Print the value stored in name
     printf("\t%u\n", ptr->name); // Print the address of name
 
