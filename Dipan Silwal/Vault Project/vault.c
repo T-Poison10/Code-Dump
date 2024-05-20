@@ -6,7 +6,7 @@ int main()
 {
 	int i,len,c=0,hold,d,count=0;
 	char inp[100],name[100],email[100],pass[100];
-	FILE *fl; 
+	FILE *fl;
 	fl=fopen("pass.bin","r");
 	if (fl == NULL)
 	{
